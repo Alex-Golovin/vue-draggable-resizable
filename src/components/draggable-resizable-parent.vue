@@ -56,6 +56,13 @@ export default {
     width: 0,
     height: 0,
 
+    defaultItemParams: {
+      width: '20%',
+      height: '20%',
+      top: '0%',
+      left: '0%'
+    },
+
     items: [
       {
         width: '20%',
@@ -92,12 +99,7 @@ export default {
     },
 
     addNewItem () {
-      this.items.push({
-        width: '20%',
-        height: '20%',
-        top: '0%',
-        left: '0%'
-      })
+      this.items.push(this.defaultItemParams)
     }
   }
 }
